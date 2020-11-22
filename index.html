@@ -88,10 +88,11 @@ August 2020
     <script src="../js/menu.js"></script>
     <script>
         
-        gsap.from('.blog-heading', {duration: 1, y:"-100%", ease: "power2.out"})
-        gsap.from('.side-nav', { duration:1, x: "-100%", ease: "power2.out"})
-        gsap.from('.author-details', {duration:1, y: "-100%", ease: "power2.out", delay:1})
-        gsap.from('.blog-img', {duration:2, ease: "circ"})
+        gsap.from('.blog-heading', {duration: 1,opacity:0, y:"-100%", ease: "power2.out"})
+        gsap.from('.side-nav', { duration:1, x: "-100%", opacity:0, ease: "power2.out"})
+        gsap.from('.author-details', {duration:1, y: "-100%", opacity:0, ease: "power2.out", delay:1})
+        gsap.from('.blog-img', {duration:2, opacity:0, ease: "power2.out"})
+        gsap.from('.author-img', {duration:1, opacity:0, ease: "power2.out"})
 
         gsap.to(".fb-comments", { scrollTrigger: ".fb-comments", duration:1, opacity: 1});   
         gsap.to(".fb-cmnts", {scrollTrigger: ".fb-cmnts", duration:1, opacity: 1});     
